@@ -9,7 +9,7 @@ Golden State Warriors: Analysis of the Team's Performance in Season 2016
 
 In season 2016, GSW achieved great success with the efforts of all of its players who have various specialty. This paper highlights five of its key players -Andre Iguodala, Draymond Green, Kevin Durant, Klay Thompson, and Stephen Curry from the perspective of their shooting pattern and a deep analysis to their capability in two-point and three-point shots.
 
-<img src="../../../gsw.png" width="75%" style="display: block; margin: auto;" />
+![](https://fadeawayworld.net/wp-content/uploads/2018/07/36554252_10216567613245975_7989735967768444928_n.jpg?x62763)
 
 ### Background
 

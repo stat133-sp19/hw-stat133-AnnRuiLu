@@ -12,9 +12,7 @@ library(dplyr)
 
 In season 2016, GSW achieved great success with the efforts of all of its players who have various specialty. This paper highlights five of its key players -Andre Iguodala, Draymond Green, Kevin Durant, Klay Thompson, and Stephen Curry from the perspective of their shooting pattern and a deep analysis to their capability in two-point and three-point shots. 
 
-```{r out.width='75%', echo = FALSE, fig.align='center'}
-knitr::include_graphics('../../../gsw.png')
-```
+![](https://fadeawayworld.net/wp-content/uploads/2018/07/36554252_10216567613245975_7989735967768444928_n.jpg?x62763)
 
 ###Background
 
