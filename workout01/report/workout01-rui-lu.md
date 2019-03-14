@@ -124,8 +124,13 @@ From the previous analysis, we can conclude that Durant and Curry, who have comp
 ### Reference
 
 <https://en.wikipedia.org/wiki/Golden_State_Warriors>
+
 <https://en.wikipedia.org/wiki/Andre_Iguodala>
+
 <https://en.wikipedia.org/wiki/Stephen_Curry>
+
 <https://en.wikipedia.org/wiki/Kevin_Durant>
+
 <https://en.wikipedia.org/wiki/Klay_Thompson>
+
 <https://en.wikipedia.org/wiki/Draymond_Green>

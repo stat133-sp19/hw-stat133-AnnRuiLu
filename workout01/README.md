@@ -1,10 +1,3 @@
----
-title: "Untitled"
-author: "Rui Lu"
-date: 3/10/2019
-output: html_document
----
-
 The purpose of this assignment is threefold: 
 1. From the logistical point of view, this assignment will give you the opportunity to start working with a more complex file structure, and uploading files to GitHub.
 
