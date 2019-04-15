@@ -139,6 +139,7 @@ server <- function(input, output) {
       }else{
         ggplot(data=modalities_facet(), aes(x = years, y = value))+
           geom_line(aes(col = variable)) + 
+          geom_point(aes(col = variable), size=0.5) + 
           geom_area(aes(fill = variable), alpha=0.5) +
           theme_bw()+
           labs(x='Year', y="Value($)",title="Three modes of investing")+
