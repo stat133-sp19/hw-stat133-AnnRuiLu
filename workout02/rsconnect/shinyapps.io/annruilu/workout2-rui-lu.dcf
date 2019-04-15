@@ -5,6 +5,6 @@ account: annruilu
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 866590
-bundleId: 2013520
+bundleId: 2013773
 url: https://annruilu.shinyapps.io/workout2-rui-lu/
-when: 1555359646.07019
+when: 1555363651.9257
