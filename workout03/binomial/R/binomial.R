@@ -61,6 +61,7 @@ aux_kurtosis <- function(trials, prob){
 #' @param n number of trials
 #' @param k number of success
 #' @return number of combinations in which k successes can occur in n trials
+#' @export
 #' @examples
 #' bin_choose(n = 5, k = 2)
 #' bin_choose(5, 0)
@@ -83,6 +84,7 @@ bin_choose <- function(n, k){
 #' @param trials number of trials
 #' @param prob probability of achieving success
 #' @return probabilities about the number of successes in a fixed number of random trials performed under identical conditions
+#' @export
 #' @examples
 #' bin_probability(success = 2, trials = 5, prob = 0.5)
 #' bin_probability(success = 0:2, trials = 5, prob = 0.5)
@@ -104,7 +106,9 @@ bin_probability <- function(success, trials, prob){
 #' @param trials number of trials
 #' @param prob probability of achieving success
 #' @return a data frame with the probability distribution: sucesses in the first column, probability in the second column
-#' @example bin_distribution(trials = 5, prob = 0.5)
+#' @export
+#' @examples
+#' bin_distribution(trials = 5, prob = 0.5)
 bin_distribution <- function(trials, prob){
   success <- 0:trials
   probability <- bin_probability(success, trials, prob)
@@ -114,7 +118,7 @@ bin_distribution <- function(trials, prob){
 }
 
 #' @export
-#' @example
+#' @examples
 #' dis1 <- bin_distribution(trials = 5, prob = 0.5)
 #' plot(dis1)
 library(ggplot2)
@@ -131,7 +135,9 @@ plot.bindis <- function(bin) {
 #' @param trials number of trials
 #' @param prob probability of achieving success
 #' @return a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
-#' @example bin_cumulative(trials = 5, prob = 0.5)
+#' @export
+#' @examples
+#' bin_cumulative(trials = 5, prob = 0.5)
 bin_cumulative <- function(trials, prob){
   df <- bin_distribution(trials, prob)
   cum <- c()
@@ -144,7 +150,7 @@ bin_cumulative <- function(trials, prob){
 }
 
 #' @export
-#' @example
+#' @examples
 #' dis2 <- bin_cumulative(trials = 5, prob = 0.5)
 #' plot(dis2)
 plot.bincum <- function(bincum){
@@ -162,6 +168,7 @@ plot.bincum <- function(bincum){
 #' @param trials number of trials
 #' @param prob probability of achieving success
 #' @return a binomial random variable object
+#' @export
 bin_variable <- function(trials, prob){
   check_trials(trials)
   check_prob(prob)
@@ -210,7 +217,9 @@ print.summary.binvar <- function(variable){
 #' @param trials number of trials
 #' @param prob probability of achieving success
 #' @return mean of binomial distribution
-#' @example bin_mean(10, 0.3)
+#' @export
+#' @examples
+#' bin_mean(10, 0.3)
 bin_mean <- function(trials, prob){
   check_trials(trials)
   check_prob(prob)
@@ -222,7 +231,9 @@ bin_mean <- function(trials, prob){
 #' @param trials number of trials
 #' @param prob probability of achieving success
 #' @return variance of binomial distribution
-#' @example bin_variance(10, 0.3)
+#' @export
+#' @examples
+#' bin_variance(10, 0.3)
 bin_variance <- function(trials, prob){
   check_trials(trials)
   check_prob(prob)
@@ -234,7 +245,9 @@ bin_variance <- function(trials, prob){
 #' @param trials number of trials
 #' @param prob probability of achieving success
 #' @return mode of binomial distribution
-#' @example bin_mode(10, 0.3)
+#' @export
+#' @examples
+#' bin_mode(10, 0.3)
 bin_mode <- function(trials, prob){
   check_trials(trials)
   check_prob(prob)
@@ -246,7 +259,9 @@ bin_mode <- function(trials, prob){
 #' @param trials number of trials
 #' @param prob probability of achieving success
 #' @return skewness of binomial distribution
-#' @example bin_skewness(10, 0.3)
+#' @export
+#' @examples
+#' bin_skewness(10, 0.3)
 bin_skewness <- function(trials, prob){
   check_trials(trials)
   check_prob(prob)
@@ -258,7 +273,9 @@ bin_skewness <- function(trials, prob){
 #' @param trials number of trials
 #' @param prob probability of achieving success
 #' @return kurtosis of binomial distribution
-#' @example bin_kurtosis(10, 0.3)
+#' @export
+#' @examples
+#' bin_kurtosis(10, 0.3)
 bin_kurtosis <- function(trials, prob){
   check_trials(trials)
   check_prob(prob)

@@ -8,5 +8,8 @@ Description: implements functions for calculating probabilities of a Binomial ra
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
-Suggests: 
+Suggests: knitr,
+    rmarkdown,
     testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
