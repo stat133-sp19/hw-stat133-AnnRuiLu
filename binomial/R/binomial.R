@@ -1,3 +1,10 @@
+#' @title
+#' @description Binomial
+#' @param prob
+#' @param trials
+#' @param successs
+#' @return TRUE or FLASE
+
 # private function to check if an input prob is a valid probability value
 check_prob <- function(prob){
   if (prob >= 0 & prob <=1){

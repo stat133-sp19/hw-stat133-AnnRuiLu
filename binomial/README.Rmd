@@ -34,38 +34,14 @@ Install the development version from GitHub via the package `"devtools"`:
 
 #install "binomial" (with vignettes)
 
-devtools::install_github("stat133-sp19/hw-stat133-AnnRuiLu/workout03/binomial", build_vignettes = TRUE, force = TRUE)
+devtools::install_github("stat133-sp19/hw-stat133-AnnRuiLu/binomial", build_vignettes = TRUE, force = TRUE)
 ```
 
 ##Usage
 
 ```{r}
-library('binomial')
+library(binomial)
 library(ggplot2)
-
-#check whether it has a valid input probability value
-check_prob(0.5)
-
-#check whether it has a valid input of number of trails
-check_trials(10)
-
-#check whether it has a valid input of number of success
-check_success(1, 2)
-
-#mean
-aux_mean(10, 0.3)
-
-#variance
-aux_variance(10, 0.3)
-
-#mode
-aux_mode(10, 0.3)
-
-#skewness
-aux_skewness(10, 0.3)
-
-#kurtosis
-aux_kurtosis(10, 0.3)
 
 #the number of combinations in which k successes can occur in n trials
 bin_choose(n = 5, k = 2)

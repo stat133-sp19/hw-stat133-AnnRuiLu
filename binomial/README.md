@@ -35,7 +35,7 @@ Install the development version from GitHub via the package `"devtools"`:
 
 #install "binomial" (with vignettes)
 
-devtools::install_github("stat133-sp19/hw-stat133-AnnRuiLu/workout03/binomial", build_vignettes = TRUE, force = TRUE)
+devtools::install_github("stat133-sp19/hw-stat133-AnnRuiLu/binomial", build_vignettes = TRUE, force = TRUE)
 ```
 
     ## Downloading GitHub repo stat133-sp19/hw-stat133-AnnRuiLu@master
@@ -44,64 +44,9 @@ Usage
 -----
 
 ``` r
-library('binomial')
+library(binomial)
+library(ggplot2)
 
-#check whether it has a valid input probability value
-check_prob(0.5)
-```
-
-    ## [1] TRUE
-
-``` r
-#check whether it has a valid input of number of trails
-check_trials(10)
-```
-
-    ## [1] TRUE
-
-``` r
-#check whether it has a valid input of number of success
-check_success(1, 2)
-```
-
-    ## [1] TRUE
-
-``` r
-#mean
-aux_mean(10, 0.3)
-```
-
-    ## [1] 3
-
-``` r
-#variance
-aux_variance(10, 0.3)
-```
-
-    ## [1] 2.1
-
-``` r
-#mode
-aux_mode(10, 0.3)
-```
-
-    ## [1] 3
-
-``` r
-#skewness
-aux_skewness(10, 0.3)
-```
-
-    ## [1] 0.2760262
-
-``` r
-#kurtosis
-aux_kurtosis(10, 0.3)
-```
-
-    ## [1] -0.1238095
-
-``` r
 #the number of combinations in which k successes can occur in n trials
 bin_choose(n = 5, k = 2)
 ```
@@ -129,6 +74,13 @@ bin_distribution(trials = 5, prob = 0.5)
     ## 6       5     0.03125
 
 ``` r
+#plot probability distribution
+plot(bin_distribution(trials = 5, prob = 0.5))
+```
+
+![](README_files/figure-markdown_github/unnamed-chunk-2-1.png)
+
+``` r
 #create a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
 bin_cumulative(trials = 5, prob = 0.5)
 ```
@@ -140,6 +92,13 @@ bin_cumulative(trials = 5, prob = 0.5)
     ## 4       3     0.31250    0.81250
     ## 5       4     0.15625    0.96875
     ## 6       5     0.03125    1.00000
+
+``` r
+#plot cumulative distribution
+plot(bin_cumulative(trials = 5, prob = 0.5))
+```
+
+![](README_files/figure-markdown_github/unnamed-chunk-2-2.png)
 
 ``` r
 #create a binomial random variable object    

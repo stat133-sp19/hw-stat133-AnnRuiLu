@@ -9,3 +9,5 @@ devtools::test()              # run tests
 devtools::build_vignettes()   # build vignettes
 devtools::build()             # build bundle
 devtools::install()           # install package
+
+
