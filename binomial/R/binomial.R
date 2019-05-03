@@ -150,7 +150,7 @@ bin_cumulative <- function(trials, prob){
 plot.bincum <- function(bincum){
   library(ggplot2)
   ggplot(data=bincum, aes(x=success, y=cumulative)) +
-    geom_point()+
+    geom_point(shape=1)+
     geom_line()+
     xlab("successes") +
     ylab("probability")+

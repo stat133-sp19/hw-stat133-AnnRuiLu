@@ -41,6 +41,7 @@ devtools::install_github("stat133-sp19/hw-stat133-AnnRuiLu/workout03/binomial", 
 
 ```{r}
 library('binomial')
+library(ggplot2)
 
 #check whether it has a valid input probability value
 check_prob(0.5)
@@ -75,8 +76,14 @@ bin_probability(success = 2, trials = 5, prob = 0.5)
 #create a data frame with the probability distribution: sucesses in the first column, probability in the second column
 bin_distribution(trials = 5, prob = 0.5)
 
+#plot probability distribution
+plot(bin_distribution(trials = 5, prob = 0.5))
+
 #create a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
 bin_cumulative(trials = 5, prob = 0.5)
+
+#plot cumulative distribution
+plot(bin_cumulative(trials = 5, prob = 0.5))
 
 #create a binomial random variable object    
 bin_variable(trials = 5, prob = 0.5)
