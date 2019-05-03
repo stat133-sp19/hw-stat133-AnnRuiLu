@@ -101,14 +101,24 @@ plot(bin_cumulative(trials = 5, prob = 0.5))
 ![](README_files/figure-markdown_github/unnamed-chunk-2-2.png)
 
 ``` r
-#create a binomial random variable object    
-bin_variable(trials = 5, prob = 0.5)
+#create a binomial random variable object and print it 
+bin1 <- bin_variable(trials = 10, p = 0.3)
+binsum1 <- summary(bin1)
+binsum1
 ```
 
-    ## "Binomial variable"
+    ## "Summary Binomial"
     ## 
-    ## Parameters- number of trials: 5
-    ## - prob of success : 0.5
+    ## Paramaters
+    ## - number of trials: 10
+    ## - prob of success : 0.3
+    ## 
+    ## Measures
+    ## - mean    : 3 
+    ## - variance: 2.1 
+    ## - mode    : 3 
+    ## - skewness: 0.2760262 
+    ## - kurtosis: -0.1238095
 
 ``` r
 #calculate the mean, variance, mode, skewness, and kurtosis of binomial distribution

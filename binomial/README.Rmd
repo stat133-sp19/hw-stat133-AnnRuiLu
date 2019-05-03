@@ -61,8 +61,10 @@ bin_cumulative(trials = 5, prob = 0.5)
 #plot cumulative distribution
 plot(bin_cumulative(trials = 5, prob = 0.5))
 
-#create a binomial random variable object    
-bin_variable(trials = 5, prob = 0.5)
+#create a binomial random variable object and print it 
+bin1 <- bin_variable(trials = 10, p = 0.3)
+binsum1 <- summary(bin1)
+binsum1
 
 #calculate the mean, variance, mode, skewness, and kurtosis of binomial distribution
 bin_mean(10, 0.3)
