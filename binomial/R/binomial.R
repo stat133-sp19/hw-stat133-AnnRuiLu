@@ -118,9 +118,6 @@ bin_distribution <- function(trials, prob){
 }
 
 #' @export
-#' @examples
-#' dis1 <- bin_distribution(trials = 5, prob = 0.5)
-#' plot(dis1)
 plot.bindis <- function(bin) {
   library(ggplot2)
   ggplot(data=bin, aes(x=success, y=probability)) +
@@ -150,9 +147,6 @@ bin_cumulative <- function(trials, prob){
 }
 
 #' @export
-#' @examples
-#' dis2 <- bin_cumulative(trials = 5, prob = 0.5)
-#' plot(dis2)
 plot.bincum <- function(bincum){
   library(ggplot2)
   ggplot(data=bincum, aes(x=success, y=cumulative)) +
